@@ -345,3 +345,23 @@ h2{
     margin-top: 100px;
     color: #ffffff;
 }
+
+
+
+/******RESPONSIVE******/
+
+@media(max-with:1024px){
+/* aca tengo que modificar navbar, banner, categorias ponerlas en orden y el footer */
+}
+
+@media(max-with:768px){
+    /* aca tengo que modificar navbar, carrusel, banner, categorias y footer */
+}
+
+@media(max-with:425px){
+ /* aca tengo que modificar navbar, carrusel, banner y footer */
+}
+
+@media(max-with:320px){
+ /* aca tengo que modificar navbar, carrusel, banner y footer */
+}
