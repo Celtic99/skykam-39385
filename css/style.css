@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOPOGRAFIAS 
+
+font-family: 'Rubik Spray Paint', cursive;
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+/* PALETA COLORES
+
+#ffffff
+#1D1D1D
+
+*/
+
+
+/* COLOR FONDO */
+header{
+    background-color: #1D1D1D;
+}
+body{
+    background-color: #1D1D1D;
+}
+
+main div{
+    background-color: #1D1D1D;
+}
+
+.categorias{
+    background-color: #ffffff;
+}
+
+.separador div{
+    background-color: #ffffff;
+}
+
+
+footer { 
+    background-color: #1D1D1D;
+}
+
+/* ENCABEZADO */
+
+.logo{
+    padding: 5px 0px 0px 50px;
+}
+
+
+.navbar li a{
+    font-family: 'Rubik Spray Paint', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+.navbar li{
+    display: inline block;
+
+}
+
+.iconos{
+    display: flex;
+    align-items: center;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+
+
+/* CUERPO */
+
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.elem-carrusel{
+    width: 4000px; 
+    width: 2000px;
+    padding: 0px 0px 0px 250px;
+    
+}
+
+.banner{
+    height: 921.5px;
+}
+
+/* CATEGORIAS */
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.primeras{
+    margin-top: 100px;
+}
+
+.separador-linea{
+    width: 900px;
+}
+
+.separador div{
+    display: flex;
+}
+
+
+/* PIE DE PAGINA */
+
+footer{
+    width: 100%;  
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center ;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.follow{
+    justify-content: center;
+    padding: 10px ;
+}
+
+.texto h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Rubik Spray Paint', cursive;
+    color: #8b8b8b;
+    line-height: 5px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor{
+    display: flex;
+    margin: 30px;
+    column-gap: 200px;
+
+}
+
+
+.box1-pagos{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 5px;
+    margin-top: 25px;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+
+.box2-envios{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 5px;
+
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+
+.box1 h2 , .box2 h2 , .box3 h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box3 h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+
+/* ENLACES */
+
+.enlaces a{
+    background-color:#ffffff;
+    color: #1d1d1d;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    
+    gap: 40px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/************ PAGINAS ***********/
+
+/* NEW IN */
+
+.newin-box{
+    background-color: #ffffff ;
+    height: 1000px;
+}
+
+.newin-box{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 50px;
+    margin-top: 100px;
+    padding: 0px 0px 0px 400px;
+}
+
+.card-newin{
+    margin-top:100px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.conteiner-card{
+    text-align: start;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    
+}
+
+h2{
+    font-size: 10px;
+}
+
+
+/* FAQS */
+
+.contenedor-pregs{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contenedor-pregs h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.pregs{
+    background-color: #ffffff;
+
+}
+
+.pregs label{
+    display: block;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.pregs .contenido-pregs{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-pregs:checked ~ .contenido-pregs{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+
+/* CONTACTO */
+
+fieldset{
+    width: 10px;
+    display: flex;
+    background-color: #ffffff;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+button, input{
+    font-size: 100%;
+    font-size: 20px;
+    font-style: bold;
+}
+
+form{
+    width : 1100px;
+    padding: 0;
+    margin: 150px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+}
