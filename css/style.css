@@ -300,6 +300,10 @@ h2{
     transition: all 300ms ease;
 }
 
+.btn-pregs{
+    display: none;
+}
+
 .pregs .contenido-pregs{
     padding: 0px;
     margin: 0px 20px;
