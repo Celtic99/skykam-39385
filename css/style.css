@@ -50,7 +50,7 @@ footer {
 /* ENCABEZADO */
 
 .logo{
-    padding: 5px 0px 0px 50px;
+    padding: 5px 0px 9px 30px;
 }
 
 
@@ -76,6 +76,7 @@ footer {
 .iconos{
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 
@@ -89,21 +90,8 @@ header{
 
 /* CUERPO */
 
-.carrusel{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-}
-
-.elem-carrusel{
-    width: 4000px; 
-    width: 2000px;
-    padding: 0px 0px 0px 250px;
-    
-}
-
 .banner{
-    height: 921.5px; 
+    max-width: 100%; 
 }
 
 /* CATEGORIAS */
@@ -114,6 +102,9 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5em;
+}
+.c-imagen{
+    max-width: 100%;
 }
 
 .primeras{
@@ -127,6 +118,7 @@ header{
 .separador div{
     display: flex;
 }
+
 
 
 /* PIE DE PAGINA */
@@ -241,7 +233,7 @@ footer{
 
 .card-newin{
     margin-top:100px;
-    width: 200px;
+    width: 200px; 
     height: 300px;
     border: 2px solid white;
     display: flex;
@@ -256,6 +248,7 @@ footer{
     background-color: #ffffff;
     letter-spacing: 1px;
     font-size: 15px;
+    max-block-size: 100px;
     
 }
 
@@ -354,18 +347,23 @@ h2{
 
 /******RESPONSIVE******/
 
-@media(max-with:1024px){
+@media screen and (max-with:1024px){
 /* aca tengo que modificar navbar, banner, categorias ponerlas en orden y el footer */
+
 }
 
 @media(max-with:768px){
     /* aca tengo que modificar navbar, carrusel, banner, categorias y footer */
+
+    
 }
 
 @media(max-with:425px){
  /* aca tengo que modificar navbar, carrusel, banner y footer */
+
 }
 
 @media(max-with:320px){
  /* aca tengo que modificar navbar, carrusel, banner y footer */
+
 }
