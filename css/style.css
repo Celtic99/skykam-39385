@@ -51,6 +51,8 @@ footer {
 
 .logo{
     padding: 5px 0px 9px 30px;
+    width: 220px;
+    margin-right: 100px;
 }
 
 
@@ -73,10 +75,15 @@ footer {
 
 }
 
+.navbar li a:hover{
+    color: #8b8b8b;
+}
+
 .iconos{
     display: flex;
     align-items: center;
     padding-right: 30px;
+    margin-left: 50px;
 }
 
 
@@ -215,10 +222,10 @@ footer{
     text-decoration: none;
     list-style: none;
     display: flex;
-
+    
     gap: 40px;
     font-family: 'Montserrat', sans-serif;
-
+    
 }
 
 /************ PAGINAS ***********/
@@ -256,7 +263,7 @@ footer{
     letter-spacing: 1px;
     font-size: 15px;
     max-block-size: 100px;
-
+    
 }
 
 h2{
@@ -286,7 +293,7 @@ h2{
 
 .pregs{
     background-color: #ffffff;
-
+    
 }
 
 .pregs label{
@@ -325,7 +332,7 @@ fieldset{
     background-color: #ffffff;
     padding: 50px;
     font-family: 'Montserrat', sans-serif;
-
+    
 }
 
 button, input{
@@ -353,24 +360,18 @@ h2{
 
 
 /******RESPONSIVE******/
-/*
-@media screen and (max-with:1024px){
-/* aca tengo que modificar navbar, banner, categorias ponerlas en orden y el footer
 
-} */
-
-@media(max-with:768px){
-    /* aca tengo que modificar navbar, carrusel, banner, categorias y footer */
-
-
+@media all and (max-with:768px){
+     .navbar{
+        justify-content: center;
+     }
 }
-
 @media(max-with:425px){
- /* aca tengo que modificar navbar, carrusel, banner y footer */
-
+    /* aca tengo que modificar navbar, carrusel, banner y footer */
+    
 }
 
 @media(max-with:320px){
- /* aca tengo que modificar navbar, carrusel, banner y footer */
-
+    /* aca tengo que modificar navbar, carrusel, banner y footer */
+    
 }
