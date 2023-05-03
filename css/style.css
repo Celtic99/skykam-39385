@@ -272,8 +272,12 @@ footer{
     
 }
 
-h2{
-    font-size: 10px;
+.name_clothes{
+    font-size: 25px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+    margin-top: 8px;
 }
 
 
@@ -427,6 +431,27 @@ h2{
         flex-direction:row;
         align-content:center;
     }
+
+     /* NEW IN */
+
+    .newin-box {
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 50px;
+        margin-top: 8px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 0px 10px 60px 10px;
+    }
+
+    .name_clothes{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 8px;
+        color: #000000;
+    }
     
 }
 @media(max-with:425px){
@@ -454,11 +479,29 @@ h2{
     }
 
     .dropdown_menu{
-        display: block;
+        left: 2rem;
+        width: unset;
     }
-}
 
-@media(max-with:320px){
-    /* aca tengo que modificar navbar, carrusel, banner y footer */
-    
+    /* NEW IN  */
+    .newin-box {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 3px;
+        padding: 0px 0px 0px 0px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 425px;
+    }
+
+    .newin-box {
+        background-color: #ffffff;
+        height: auto;
+    }
+
+    .card-newin {
+    margin-bottom: 114px;
+    }
 }
