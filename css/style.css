@@ -79,6 +79,12 @@ footer {
     color: #8b8b8b;
 }
 
+nav .toggle_btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
 .iconos{
     display: flex;
     align-items: center;
@@ -357,18 +363,99 @@ h2{
     color: #ffffff;
 }
 
+/* DROPDOWN */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height, 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
 
 /******RESPONSIVE******/
 
 @media all and (max-with:768px){
-     .navbar{
+    header {
+        width: 768px;
+        display: flex;
+        align-items: center;
         justify-content: center;
-     }
+        padding: 12px 10px;
+        align-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        padding: 5px 15px 6px 6px;
+        width: 153px;
+        margin-right: 34px;
+    }
+
+    .navbar {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .categorias {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:flex-end;
+        gap:5em;
+        flex-direction:row;
+        align-content:center;
+    }
+    
 }
 @media(max-with:425px){
     /* aca tengo que modificar navbar, carrusel, banner y footer */
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .logo {
+        padding: 5px 0px 9px 5px;
+        width: 100px;
+        margin-right: 21px;
+    }
     
+    nav .navbar{
+        display: none;
+
+    }
+    nav .toggle_btn{
+        display: block;
+
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
 }
 
 @media(max-with:320px){
