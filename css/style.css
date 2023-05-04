@@ -395,7 +395,7 @@ h2{
 
 /******RESPONSIVE******/
 
-@media all and (max-with:768px){
+@media all and (max-width:768px){
     header {
         width: 768px;
         display: flex;
@@ -454,7 +454,7 @@ h2{
     }
     
 }
-@media(max-with:425px){
+@media(max-width:425px){
     /* aca tengo que modificar navbar, carrusel, banner y footer */
     header {
         display: flex;
