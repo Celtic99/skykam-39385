@@ -59,7 +59,7 @@ footer {
 .navbar li a{
     font-family: 'Rubik Spray Paint', cursive;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -67,7 +67,8 @@ footer {
 .navbar{
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 26px;
+    margin: 1px;
 
 }
 .navbar li{
@@ -79,9 +80,20 @@ footer {
     color: #8b8b8b;
 }
 
-nav .toggle_btn{
+nav .navbar-responsive{
     font-size: 1.5rem;
     cursor: pointer;
+    display: none;
+}
+
+ul li a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.logo-respon{
     display: none;
 }
 
@@ -367,44 +379,55 @@ h2{
     color: #ffffff;
 }
 
-/* DROPDOWN */
-.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height, 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu.open{
-    height: 240px;
-}
 
 /******RESPONSIVE******/
+
+@media all and (max-width:1024px){
+    header {
+        width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 25px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding: 6px 21px 5px 12px;
+        width: 189px;
+        margin-right: 72px;
+    }
+
+    .navbar {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .categorias {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:flex-end;
+        gap:5em;
+        flex-direction:row;
+        align-content:center;
+    }
+}
 
 @media all and (max-width:768px){
     header {
         width: 768px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         padding: 12px 10px;
-        align-content: space-around;
+        align-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin: 1px;
     }
 
     .logo {
@@ -413,11 +436,19 @@ h2{
         margin-right: 34px;
     }
 
+    
+    .navbar li a{
+        font-family: 'Rubik Spray Paint', cursive;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+    }
     .navbar {
         margin: auto;
         list-style: none;
         display: flex;
-        gap: 40px;
+        gap: 20px;
         flex-wrap: nowrap;
         justify-content: center;
     }
@@ -454,34 +485,98 @@ h2{
     }
     
 }
-@media(max-width:425px){
+@media all and (max-width:425px){
     /* aca tengo que modificar navbar, carrusel, banner y footer */
     header {
+        width: 420px;
+        height: 70px;
+        background-color: #ffffff;
         display: flex;
         align-items: center;
         padding: 0px 10px;
         align-content: center;
         justify-content: flex-start;
+        gap: 70px;
+        margin: 2px 1px 1px 2px;
+        border-style: solid;
+        border-color: #1D1D1D;
+        position: fixed;
     }
-    .logo {
-        padding: 5px 0px 9px 5px;
-        width: 100px;
-        margin-right: 21px;
+    .logo{ 
+        display: none;
     }
     
     nav .navbar{
         display: none;
 
     }
-    nav .toggle_btn{
+
+    .menu-respon{
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    nav .navbar-responsive{
+        font-size: 1.5rem;
+        cursor: pointer;
         display: block;
-
+        padding: 0px 10px;
+    }
+    
+    .menu-responsive{
+        position: fixed;
+        list-style: none;
+        background-color: rgba(0, 0, 0, .5);
+        width: 45%;
+        display: none;
+        justify-content: center;
+        padding: 3px ;
+        text-align: center;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        
+        left: 100%;
+        transition: all 0.5s;
+    }
+    .checkbtn{
+        cursor: pointer;
+    }
+    #check{
+        display: none;
     }
 
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
+    .menu-responsive li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
     }
+
+    .menu-responsive li a:hover, .menu-responsive li a.active{
+        background: none;
+    }
+
+    #check:checked ~ .menu-responsive{
+        left: 0;
+    }
+
+    .navbar-responsive .menu-responsive{
+        display: block;
+        /* margin-top: 52px;  */
+    }
+
+    .logo-respon{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .iconos{
+        margin: 3px;
+    }
+
+
+
 
     /* NEW IN  */
     .newin-box {
@@ -504,4 +599,8 @@ h2{
     .card-newin {
     margin-bottom: 114px;
     }
+}
+
+@media(max-width:320px){
+
 }
